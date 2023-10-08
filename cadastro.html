@@ -17,39 +17,39 @@
       <a href="#" class="brand-logo">Epic Task</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="/">tarefas</a></li>
-        <li class="active"><a href="cadastrar.html">criar tarefa</a></li>
+        <li class="active"><a href="cadastro.html">cadastro</a></li>
         <li><a href="perfil.html">perfil</a></li>
       </ul>
     </div>
   </nav>
 
   <main class="container">
-    <h4>Cadastrar Tarefa</h4>
+    <h4>Cadastro funcionario </h4>
 
     <div class="row">
       <form class="col s12">
         <div class="row">
           <div class="input-field col s12">
-            <input id="titulo" type="text" class="validate" minlength="3">
-            <label for="titulo">Título</label>
-            <span class="helper-text" data-error="Título muito curto. Preencha um título com pelo menos 3 caracteres." data-success="">digite o título da tarefa</span>
+            <input id="nome" type="text" class="validate" minlength="10">
+            <label for="nome">Nome</label>
+            <span class="helper-text" data-error="Escreva seu nome completo" data-success="">Escreva seu nome</span>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <textarea id="descricao" class="materialize-textarea"></textarea>
-            <label for="descricao">Descrição</label>
+            <label for="descricao">Fale sobre você</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input id="pontos" type="number" class="validate" min="1" max="100">
-            <label for="pontos">Pontos</label>
+            <label for="pontos">Idade</label>
             <span 
               class="helper-text" 
               data-error="Pontuação inválida. Informe um valor entre 1 e 100" 
               data-success="">
-                digite a pontuação da tarefa
+                coloque sua idade
             </span>
           </div>
         </div>

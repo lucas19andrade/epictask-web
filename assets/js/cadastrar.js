@@ -6,7 +6,7 @@ document.querySelector("#botao-cadastrar").addEventListener("click", () => {
 
     const tarefa = {
         nome: document.querySelector("#nome").value,
-        pontos:document.querySelector("#pontos").value,
+        idade:document.querySelector("#idade").value,
         descricao:document.querySelector("#descricao").value
     }
 

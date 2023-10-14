@@ -11,9 +11,9 @@ window.addEventListener("load", () => {
         card.innerHTML = `
         <div class="card">
                 <div class="card-content">
-                  <span class="card-title">${tarefa.titulo}</span>
+                  <span class="card-title">${tarefa.nome}</span>
                   <p>${tarefa.descricao}</p>
-                  <span data-badge-caption="reais" class="badge blue white-text">${tarefa.pontos}</span>
+                  <span data-badge-caption="anos" class="badge red white-text">${tarefa.idade}</span>
                 </div>
                 <div class="card-action">
                   <a href="#" class="btn red">

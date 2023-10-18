@@ -7,6 +7,7 @@ window.addEventListener("load", () => {
 
     function criarCard(tarefa){
         const card = document.createElement("div")
+        card
 
         card.innerHTML = `
         <div class="card">
@@ -16,7 +17,7 @@ window.addEventListener("load", () => {
                   <span data-badge-caption="anos" class="badge red white-text">${tarefa.idade}</span>
                 </div>
                 <div class="card-action">
-                  <a href="#" class="btn red">
+                  <a href="#" class="btn red" onClick="apagar(${tarefa.id})">
                       <i class="material-icons">delete</i>
                     </a>
                     <a href="#" class="btn green">

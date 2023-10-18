@@ -5,6 +5,7 @@ document.querySelector("#botao-cadastrar").addEventListener("click", () => {
     console.log(tarefas)
 
     const tarefa = {
+       id: Date.now(),
         nome: document.querySelector("#nome").value,
         idade:document.querySelector("#idade").value,
         descricao:document.querySelector("#descricao").value

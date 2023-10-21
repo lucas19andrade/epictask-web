@@ -1,4 +1,4 @@
-document.querySelector("#botao-cadastrar").addEventListener("click", () => { 
+document.querySelector("#botao-cadastrar").addEventListener("click",function () { 
 
     let tarefas = JSON.parse(localStorage.getItem("tarefas")) || []
 

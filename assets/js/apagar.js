@@ -6,5 +6,6 @@ function apagar(id){
     const tarefas_filtrados = tarefa.filter(tarefa => tarefa.id !== id)
     localStorage.setItem("tarefas", JSON.stringify(tarefas_filtrados))
     atualizar()
+    calcularEstatistica()
 }
 

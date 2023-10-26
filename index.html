@@ -8,11 +8,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="./assets/js/carregar.js"></script>
     <script src="./assets/js/apagar.js"defer></script>
+    7<script src="./assets/js/concluir.js"defer></script>
+    <script src="./assets/js/dashboard.js"defer></script>
     <title>Vagas.com</title>
 </head>
 <body>
 
-    <nav>
+    <nav class="indigo">
+      
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">Vagas.com</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -24,6 +27,34 @@
       </nav>
 
       <main class="container">
+          <div class="row">
+            <div class="col s12, m6, l3">
+              <div class="card-panel center pink wine white-text">
+                <h3 id="qtde-pendente">0</h3>
+                <span>tarefas pendentes</span>
+              </div>
+            </div>
+            <div class="col s12, m6, l3">
+              <div class="card-panel center grey ">
+                <h3 id="qtde-concluida">0</h3>
+                <span>tarefas concluidas</span>
+              </div>
+            </div>
+            <div class="col s12, m6, l3">
+              <div class="card-panel center green white-text">
+                <h3 id="total-pontos">0</h3>
+                <span>total de pontos</span>
+              </div>
+            </div>
+            <div class="col s12, m6, l3">
+              <div class="card-panel center black white-text">
+                <h3 id="meus-pontos">0</h3>
+                <span>Meus pontos</span>
+              </div>
+            </div>
+            
+            
+          </div>
         <h4>Registros de dados dos candidatos</h4>
 
         <div class="row" id ="lista-tarefas">

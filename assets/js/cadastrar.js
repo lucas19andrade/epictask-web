@@ -7,9 +7,9 @@ document.querySelector("#botao-cadastrar").addEventListener("click",function () 
     const tarefa = {
        id: Date.now(),
         nome: document.querySelector("#nome").value,
-        idade:document.querySelector("#idade").value,
+        pontos:document.querySelector("#idade").value,
         descricao:document.querySelector("#descricao").value,
-        concluida: true
+        concluida: false
     }
 
     tarefas.push(tarefa)
@@ -17,5 +17,6 @@ document.querySelector("#botao-cadastrar").addEventListener("click",function () 
   localStorage.setItem("tarefas", JSON.stringify(tarefas))
 
   window.location.href = "index.html"
+  calcularEstatistica()
    
 })

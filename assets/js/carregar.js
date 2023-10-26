@@ -17,7 +17,7 @@ window.addEventListener("load", atualizar )
               <div class="card-content">
                 <span class="card-title">${tarefa.nome}</span>
                 <p>${tarefa.descricao}</p>
-                <span data-badge-caption="anos" class="badge red white-text">${tarefa.idade}</span>
+                <span data-badge-caption="pontos" class="badge red white-text">${tarefa.pontos}</span>
               </div>
               <div class="card-action">
                 <a href="#" class="btn red" onClick="apagar(${tarefa.id})">

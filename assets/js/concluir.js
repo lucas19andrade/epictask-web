@@ -1,7 +1,8 @@
 function concluir(id){
-    const tarefa = JSON.parse (localStorage.getItem("tarefas")) || []
-    let tarefas = tarefa.find(t => t.id === id)
+    const tarefas = JSON.parse (localStorage.getItem("tarefas")) || []
+    let tarefa = tarefas.find(t => t.id === id)
     tarefa.concluida = true
-    localStorage.setItem("tarefas", JSON.stringify(tarefa))
+    localStorage.setItem("tarefas", JSON.stringify(tarefas))
     atualizar()
+    calcularEstatistica()
 }
